@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мережеве обладнання бюро</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Мережеве обладнання бюро</h1>
+    <p id="status" role="status"></p>
+    <ul id="devices"></ul>
+    <h2>Додати пристрій</h2>
+<form id="device-form">
+  <label>Назва <input name="name" required maxlength="150"></label>
+  <label>Тип <input name="device_type" required maxlength="150"></label>
+  <label>Місце <input name="location" required maxlength="150"></label>
+  <button type="submit">Додати</button>
+</form>
+<label>Пошук за назвою <input id="search" type="search"></label>
+
+<label>
+  Тип пристрою
+  <select id="type-filter">
+    <option value="">Усі типи</option>
+  </select>
+</label>
+
+<label>
+  Сортування
+  <select id="sort">
+    <option value="id">За номером</option>
+    <option value="name">За назвою</option>
+  </select>
+</label>
+<p id="form-status" role="status"></p>
+  </main>
+</body>
+</html>
